@@ -1,214 +1,118 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>Chikodiri</title>
-
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-
-  <link href="css/style.css" rel="stylesheet" />
-  <link href="css/responsive.css" rel="stylesheet" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Chikodiri</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
-  <div class="hero_area">
+    <!-- Header Section -->
     <header class="header_section">
-      <div class="header_top">
-        <div class="container-fluid">
-          <div class="contact_nav">
-            <a href="">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                Email : ibeakanmachikodiri@gmail.com
-              </span>
-            </a>
-            <a>
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Phone: +1 437-228-6588
-              </span>
-            </a>
-          </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Chikodiri</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </div>
-      <div class="header_bottom">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              <span>
-                Chikodiri
-              </span>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="contact.html">Contact Me</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
     </header>
-    <!-- end header section -->
-  </div>
 
-
-  <!-- contact section -->
-
-  <section class="contact_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Contact Me
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <form action="">
-            <div>
-              <input type="text" placeholder="Name" />
-            </div>
-            <div>
-              <input type="text" placeholder="Phone Number" />
-            </div>
-            <div>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div>
-              <input type="text" class="message-box" placeholder="Message" />
-            </div>
-            <div class="d-flex ">
-              <button>
-                SEND
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <h3>Contact Information</h3>
-           <div id="map" style="height: 300px;"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end contact section -->
-
-
-  <!-- info section -->
-  <section class="info_section ">
-    <div class="container">
-      <h4>
-        Get In Touch
-      </h4>
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <div class="info_items">
+    <!-- Contact Section -->
+    <section class="contact_section py-5">
+        <div class="container">
             <div class="row">
-              <div class="col-md-4">
-                <a href="">
-                  <div class="item ">
-                    <div class="img-box ">
-                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <!-- Contact Form -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="mb-4">CONTACT ME</h2>
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <input type="text" class="form-control form-control-lg" placeholder="Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="tel" class="form-control form-control-lg" placeholder="Phone Number" required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control form-control-lg" placeholder="Email" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control form-control-lg" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg px-5">SEND</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Contact Information</h2>
+                    <div class="map-container mb-4">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3839411199397!2d-79.38639462427847!3d43.66633037110666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b832a82a87%3A0x1e952d48f6df8f0e!2sChurch-Wellesley%2C%20Toronto%2C%20ON!5e0!3m2!1sen!2sca!4v1709234863080!5m2!1sen!2sca"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
-                    <p>
-                      Toronto, Ontario
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="">
-                  <div class="item ">
-                    <div class="img-box ">
-                      <i class="fa fa-phone" aria-hidden="true"></i>
+                    <div class="contact-details">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt fa-2x me-3 text-primary"></i>
+                            <p class="mb-0">Toronto, Ontario</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-phone fa-2x me-3 text-primary"></i>
+                            <p class="mb-0">+1 437-228-6588</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-envelope fa-2x me-3 text-primary"></i>
+                            <p class="mb-0">ibeakanmachikodiri@gmail.com</p>
+                        </div>
                     </div>
-                    <p>
-                      +1 437-228-6588
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="">
-                  <div class="item ">
-                    <div class="img-box">
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      ibeakanmachikodiri@gmail.com
-                    </p>
-                  </div>
-                </a>
-              </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="social-box">
-      <h4>
-        Follow Me
-      </h4>
-      <div class="box">
-        <a href="https://www.linkedin.com/in/chikodiriibeakanma/" target="_blank">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.instagram.com/chikodiri.i/" target="_blank">
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer_section">
+        <div class="container">
+            <div class="quick-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2024 Chikodiri. All rights reserved.</p>
+        </div>
+    </footer>
 
-
-  <!-- end info_section -->
-
-  <!-- footer section -->
-  <footer class="footer_section">
-
-  </footer>
-  <!-- footer section -->
-
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <script src="js/custom.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF2K4MVXawaKO0IQONBA5Jc04mBIfbdxE"></script>
-   <script src="js/contact.js"></script>
-
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-</html>
+</html> 
