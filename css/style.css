@@ -1,4 +1,4 @@
-/* Custom Properties */
+/* Custom Properties for consistent theming */
 :root {
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
@@ -6,7 +6,7 @@
   --light-bg: #f8f9fa;
 }
 
-/* Base Styles */
+/* Base Styles for the entire website */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
@@ -16,7 +16,29 @@ body {
   flex-direction: column;
 }
 
-/* Header Section */
+/* Skip Navigation Link styles for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary-color);
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Focus styles for better keyboard navigation */
+:focus {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
+/* Header Section styles */
 .header_section {
   background-color: var(--primary-color);
   padding: 15px 0;
@@ -38,13 +60,13 @@ body {
   color: white !important;
 }
 
-/* Hero Section */
+/* Hero Section styles */
 .hero_area {
   padding: 100px 0;
   background-color: #d1e3ff;
 }
 
-/* About Section */
+/* About Section styles */
 .about_section {
   padding: 100px 0;
 }
@@ -56,11 +78,12 @@ body {
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-/* Projects Section */
+/* Projects Section styles */
 .projects_section {
   padding: 100px 0;
 }
 
+/* Project Item styles */
 .project-item {
   position: relative;
   margin-bottom: 30px;
@@ -85,6 +108,7 @@ body {
   transform: scale(1.05);
 }
 
+/* Project Overlay styles */
 .project-overlay {
   position: absolute;
   top: 0;
@@ -103,25 +127,7 @@ body {
   opacity: 1;
 }
 
-.view-text {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.project-info {
-  background-color: white;
-  padding: 15px;
-}
-
-.project-info h5 {
-  margin: 0;
-  font-size: 1.2rem;
-  color: var(--primary-color);
-}
-
-/* Project Modal */
+/* Project Modal styles */
 .gallery-container {
   position: relative;
   margin-bottom: 20px;
@@ -150,7 +156,7 @@ body {
   background-color: white;
 }
 
-/* Skills Section */
+/* Skills Section styles */
 .skills_section .card {
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -165,7 +171,7 @@ body {
   color: var(--primary-color);
 }
 
-/* Contact Info Section */
+/* Contact Info Section styles */
 .info_section {
   padding: 75px 0;
   background-color: var(--primary-color);
@@ -195,7 +201,7 @@ body {
   color: var(--secondary-color);
 }
 
-/* Footer */
+/* Footer Section styles */
 .footer_section {
   background-color: var(--primary-color);
   color: white;
@@ -237,7 +243,7 @@ body {
   text-align: center;
 }
 
-/* Responsive Adjustments */
+/* Responsive Design Adjustments */
 @media (max-width: 768px) {
   .hero_area {
     padding: 50px 0;
@@ -271,7 +277,7 @@ body {
   }
 }
 
-/* Contact Section */
+/* Contact Section styles */
 .contact_section {
   background-color: lavender;
   min-height: calc(100vh - 300px);
@@ -335,6 +341,7 @@ body {
   color: var(--text-color);
 }
 
+/* Mobile Responsive Adjustments for Contact Section */
 @media (max-width: 768px) {
   .contact_section {
     padding: 50px 0;

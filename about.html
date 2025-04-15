@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="About Chikodiri - Graphic Design and Web Development Professional">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chikodiri Ibeakanma">
     <title>About - Chikodiri</title>
-    <!-- Bootstrap CSS -->
+    
+    <!-- External Resources -->
+    <!-- Bootstrap 5.3.0 - https://getbootstrap.com/ -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
+    <!-- Font Awesome 6.0.0 - https://fontawesome.com/ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Header Section -->
-    <header class="header_section">
+    <!-- Header Section with Navigation -->
+    <header class="header_section" role="banner">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="Main navigation">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Chikodiri</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <a class="navbar-brand" href="index.html" aria-label="Home">Chikodiri</a>
+                    <!-- Mobile Navigation Toggle Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- Navigation Links -->
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="about.html">About</a>
+                                <a class="nav-link active" href="about.html" aria-current="page">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="projects.html">Projects</a>
@@ -42,113 +50,123 @@
         </div>
     </header>
 
-    <!-- About Section -->
-    <section class="about_section py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="detail-box">
-                        <h2 class="mb-4">About Me</h2>
-                        <p class="mb-4">
-                            I am a resourceful and outstanding professional with extensive knowledge in graphic design for print and web, data analytics, business development, and data administration. I have a proven track record in developing, managing, and implementing strategies while effectively measuring results.
-                        </p>
-                        <p class="mb-4">
-                            My work consistently achieves record-high client satisfaction rankings, significant improvements to the bottom line, and successful turnarounds of underperforming operations.
-                        </p>
-                        <p class="mb-4">
-                            I hold a certificate in Graphic Design for Print and Web and Web Design & Development from Humber College. I also completed a Business Management Co-op program at the Toronto School of Management. Additionally, I earned a Bachelor of Science in Mass Communication from Babcock University, Nigeria.
-                        </p>
-                        <p>
-                            As a fast learner, I am eager to acquire more knowledge in a hands-on learning environment. I am adaptable and passionate about both personal and professional growth.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="img-box">
-                        <img src="images/grad.JPG" alt="Profile" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Specialization/Skill Set</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-paint-brush fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Graphics & Web Technologies</h5>
-                            <p class="card-text">Adobe Suite, HTML, CSS, SQL</p>
+    <!-- Main Content Area -->
+    <main id="main-content" role="main">
+        <!-- About Section with Personal Information -->
+        <section class="about_section py-5" aria-labelledby="about-heading">
+            <div class="container">
+                <h1 id="about-heading" class="text-center mb-5">About Me</h1>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="detail-box">
+                            <p class="mb-4">
+                                I am a resourceful and outstanding professional with extensive knowledge in graphic design for print and web, data analytics, business development, and data administration. I have a proven track record in developing, managing, and implementing strategies while effectively measuring results.
+                            </p>
+                            <p class="mb-4">
+                                My work consistently achieves record-high client satisfaction rankings, significant improvements to the bottom line, and successful turnarounds of underperforming operations.
+                            </p>
+                            <p class="mb-4">
+                                I hold a certificate in Graphic Design for Print and Web and Web Design & Development from Humber College. I also completed a Business Management Co-op program at the Toronto School of Management. Additionally, I earned a Bachelor of Science in Mass Communication from Babcock University, Nigeria.
+                            </p>
+                            <p>
+                                As a fast learner, I am eager to acquire more knowledge in a hands-on learning environment. I am adaptable and passionate about both personal and professional growth.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fab fa-microsoft fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Microsoft</h5>
-                            <p class="card-text">Microsoft Office, SharePoint Online</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-users fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Soft Skills</h5>
-                            <p class="card-text">Administrative, Organization, Communication, Problem Solving</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-handshake fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Client Relations</h5>
-                            <p class="card-text">Customer Service, Conflict Resolution, Relationship Building</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-tasks fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Administrative Skills</h5>
-                            <p class="card-text">Office Management, Scheduling & Coordination, Document Management</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-chart-bar fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Data Analysis</h5>
-                            <p class="card-text">Data Entry & Processing, Data Management, Data Cleaning</p>
+                    <div class="col-lg-6">
+                        <div class="img-box">
+                            <img src="images/grad.JPG" alt="Chikodiri's graduation photo" class="img-fluid rounded shadow">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer_section">
+        <!-- Skills Section with Specialization Cards -->
+        <section class="py-5 bg-light" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" class="text-center mb-5">Specialization/Skill Set</h2>
+                <div class="row g-4">
+                    <!-- Graphics & Web Technologies Card -->
+                    <article class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-paint-brush fa-3x mb-3 text-primary" aria-hidden="true"></i>
+                                <h3 class="card-title h5">Graphics & Web Technologies</h3>
+                                <p class="card-text">Adobe Suite, HTML, CSS, SQL</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Microsoft Skills Card -->
+                    <article class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fab fa-microsoft fa-3x mb-3 text-primary" aria-hidden="true"></i>
+                                <h3 class="card-title h5">Microsoft</h3>
+                                <p class="card-text">Microsoft Office, SharePoint Online</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Soft Skills Card -->
+                    <article class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-users fa-3x mb-3 text-primary" aria-hidden="true"></i>
+                                <h3 class="card-title h5">Soft Skills</h3>
+                                <p class="card-text">Administrative, Organization, Communication, Problem Solving</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Client Relations Card -->
+                    <article class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-handshake fa-3x mb-3 text-primary" aria-hidden="true"></i>
+                                <h3 class="card-title h5">Client Relations</h3>
+                                <p class="card-text">Customer Service, Conflict Resolution, Relationship Building</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Administrative Skills Card -->
+                    <article class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-tasks fa-3x mb-3 text-primary" aria-hidden="true"></i>
+                                <h3 class="card-title h5">Administrative Skills</h3>
+                                <p class="card-text">Office Management, Scheduling & Coordination, Document Management</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Data Analysis Card -->
+                    <article class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-chart-bar fa-3x mb-3 text-primary" aria-hidden="true"></i>
+                                <h3 class="card-title h5">Data Analysis</h3>
+                                <p class="card-text">Data Entry & Processing, Data Management, Data Cleaning</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section with Quick Links -->
+    <footer class="footer_section" role="contentinfo">
         <div class="container">
-            <div class="quick-links">
+            <nav class="quick-links" aria-label="Quick links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
-            </div>
+            </nav>
             <p class="copyright">&copy; 2024 Chikodiri. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- External Resources -->
+    <!-- Bootstrap 5.3.0 JS Bundle - https://getbootstrap.com/ -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
